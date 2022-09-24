@@ -40,6 +40,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	margin: auto 0;
+	z-index: 1;
 }
 
 #button_ham {
@@ -108,6 +109,7 @@ nav {
 		flex-direction: column;
 		background-color: var(--gray);
 		opacity: 0;
+		z-index: -1;
 
 		transition: 0.5s opacity ease-out;
 	}

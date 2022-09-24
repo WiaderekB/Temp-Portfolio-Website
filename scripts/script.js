@@ -1,7 +1,5 @@
 var x = document.getElementById("nav_buttons");
 
-x.style.zIndex = "-1";
-
 function toggleNav() {
 	if (x.classList.contains("nav_active")) {
 		x.classList.remove("nav_active");
