@@ -10,6 +10,100 @@ body {
 	overflow-x: hidden;
 }
 
+.cta {
+	position: relative;
+	margin: auto;
+	width: fit-content;
+	height: fit-content;
+	padding: 19px 22px;
+	transition: all 0.2s ease;
+}
+.cta:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: block;
+	border-radius: 5vw;
+	background: rgb(251, 177, 194, 0.75);
+	width: 5vw;
+	height: 5vw;
+	transition: all 0.3s ease;
+	transform: translateY(-50%);
+}
+.cta span {
+	position: relative;
+	vertical-align: middle;
+	padding: 0 1vw;
+	margin: auto;
+	font-size: 2vw;
+	width: fit-content;
+	font-weight: 600;
+	font-family: "Public Sans", sans-serif;
+}
+.cta svg {
+	position: relative;
+	bottom: 0;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: var(--black);
+	height: 3vh;
+	stroke-width: 2;
+	transition: all 0.3s ease;
+	transform: translateY(40%);
+}
+.cta:hover:before {
+	width: 110%;
+	background: var(--pink);
+}
+.cta:hover svg {
+	transform: translate(0.75vw, 40%);
+}
+.cta:active {
+	transform: scale(0.96);
+}
+
+@media (max-width: 1500px) {
+	.cta::before {
+		width: 6vw;
+		height: 6vw;
+		border-radius: 6vw;
+	}
+	.cta span {
+		padding: 0 0.5vw;
+		font-size: 2.5vw;
+	}
+}
+@media (max-width: 1200px) {
+	.cta:hover:before {
+		width: 100%;
+	}
+	.cta svg {
+		height: 2vh;
+	}
+	.cta::before {
+		width: 8vw;
+		height: 8vw;
+		border-radius: 8vw;
+	}
+	.cta span {
+		padding: 0 0.35vw;
+		font-size: 3vw;
+	}
+}
+@media (max-width: 748px) {
+	.cta::before {
+		width: 12vw;
+		height: 12vw;
+		border-radius: 12vw;
+	}
+	.cta span {
+		padding: 0 0.25vw;
+		font-size: 5vw;
+	}
+}
+
 #title {
 	height: 65vh;
 	background-color: var(--gray);
@@ -174,7 +268,7 @@ body {
 	}
 	#text_meet > p {
 		font-size: 1.5rem;
-		width: 50vw;
+		width: 52vw;
 	}
 }
 
