@@ -5,7 +5,8 @@
 	--gray: #f9f9ff;
 }
 
-html {
+html,
+body {
 	overflow-x: hidden;
 }
 
