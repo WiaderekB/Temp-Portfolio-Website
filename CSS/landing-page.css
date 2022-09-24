@@ -65,14 +65,9 @@ body {
 }
 
 @media (max-width: 1500px) {
-	.cta::before {
-		width: 6vw;
-		height: 6vw;
-		border-radius: 6vw;
-	}
 	.cta span {
 		padding: 0 0.5vw;
-		font-size: 2.5vw;
+		font-size: 2vw;
 	}
 }
 @media (max-width: 1200px) {
@@ -83,13 +78,13 @@ body {
 		height: 2vh;
 	}
 	.cta::before {
-		width: 8vw;
-		height: 8vw;
-		border-radius: 8vw;
+		width: 7vw;
+		height: 7vw;
+		border-radius: 7vw;
 	}
 	.cta span {
 		padding: 0 0.35vw;
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 }
 @media (max-width: 748px) {
