@@ -628,7 +628,7 @@ body {
 	height: auto;
 	width: 100%;
 	padding: 3vw 0 6vw;
-	background-image: url("/images/rafi.png");
+	background-image: url("/Portfolio-Website/images/rafi.png");
 	background-size: cover;
 	color: var(--gray);
 	transition: 0.3s all ease-in-out;
