@@ -25,7 +25,7 @@ body {
 	left: 0;
 	display: block;
 	border-radius: 5vw;
-	background: rgb(251, 177, 194, 0.75);
+	background: #fbb1c2bf;
 	width: 5vw;
 	height: 5vw;
 	transition: all 0.3s ease;
@@ -552,5 +552,131 @@ body {
 	}
 	.skill {
 		font-size: 5vw;
+	}
+}
+
+#work {
+	color: #333333;
+	text-align: center;
+	margin-top: 10rem;
+}
+
+#work > h1 {
+	font-family: "Cairo", sans-serif;
+	font-weight: 700;
+	line-height: 120%;
+	font-size: 4.5vw;
+	margin: 0;
+}
+
+#work > h2 {
+	font-family: "Public Sans", sans-serif;
+	font-weight: 500;
+	font-size: 2vw;
+	margin: 0;
+}
+
+@media (max-width: 1500px) {
+	#work {
+		margin-top: 5rem;
+	}
+	#work > h1 {
+		font-size: 4rem;
+	}
+	#work > h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	#work {
+		margin-top: 3rem;
+	}
+	#work > h1 {
+		font-size: 3rem;
+	}
+	#work > h2 {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 748px) {
+	#writing {
+		margin-top: 2rem;
+	}
+	#writing > h1 {
+		font-size: 2.75rem;
+	}
+
+	#writing > h2 {
+		font-size: 1rem;
+	}
+}
+
+#websites_container {
+	width: 75vw;
+	margin: 10vh auto;
+	display: grid;
+	gap: 10vw;
+	grid-template-columns: 1fr 1fr;
+	align-self: center;
+}
+
+.website {
+	position: relative;
+	border-radius: 1.5vw;
+	width: 100%;
+	padding: 3vw 0 6vw;
+	background-image: url("/images/rafi.png");
+	background-size: cover;
+	color: var(--gray);
+	transition: 0.3s all ease-in-out;
+	aspect-ratio: 25/8;
+}
+
+.title_website {
+	position: relative;
+	font-weight: 900;
+	font-size: 4vh;
+	font-family: "Cairo", sans-serif;
+	margin: 1vw 0 3vw;
+	opacity: 0;
+	transition: 0.3s all ease-in-out;
+}
+.button_website {
+	position: relative;
+	border: var(--pink) solid 3px;
+	border-radius: 1.5vh;
+	font-size: 2.5vh;
+	padding: 1vw 2.5vw;
+	opacity: 0;
+	font-weight: 800;
+	font-family: "Public Sans", sans-serif;
+	transition: 0.3s all ease-in-out;
+}
+.button_website:hover {
+	background-color: var(--pink);
+}
+.website::before {
+	top: 0;
+	background-color: #333333e6;
+	content: "";
+	position: absolute;
+	opacity: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 1.5vw;
+	transition: 0.3s all ease-in-out;
+}
+.website:hover > .button_website,
+.website:hover > .title_website,
+.website:hover::before {
+	opacity: 1 !important;
+}
+
+@media (max-width: 1000px) {
+	#websites_container {
+		grid-template-columns: 1fr;
 	}
 }
