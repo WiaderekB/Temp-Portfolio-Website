@@ -625,13 +625,14 @@ body {
 .website {
 	position: relative;
 	border-radius: 1.5vw;
+	height: auto;
 	width: 100%;
 	padding: 3vw 0 6vw;
 	background-image: url("/images/rafi.png");
 	background-size: cover;
 	color: var(--gray);
 	transition: 0.3s all ease-in-out;
-	aspect-ratio: 25/8;
+	aspect-ratio: 25/7;
 }
 
 .title_website {
@@ -675,8 +676,21 @@ body {
 	opacity: 1 !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	#websites_container {
 		grid-template-columns: 1fr;
+	}
+	#websites_container {
+		margin: 5vw auto;
+		width: 85vw;
+	}
+	.website {
+		aspect-ratio: 25/12;
+	}
+}
+@media (max-width: 748px) {
+	#websites_container {
+		margin: 3vw auto;
+		width: 95vw;
 	}
 }
