@@ -633,6 +633,7 @@ body {
 	color: var(--gray);
 	transition: 0.3s all ease-in-out;
 	aspect-ratio: 25/7;
+	filter: drop-shadow(5px 4px 27px rgba(51, 51, 51, 0.3));
 }
 
 .title_website {
@@ -660,7 +661,7 @@ body {
 }
 .website::before {
 	top: 0;
-	background-color: #333333e6;
+	background-color: #333333f1;
 	content: "";
 	position: absolute;
 	opacity: 0;
