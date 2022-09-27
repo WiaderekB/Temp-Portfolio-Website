@@ -8,6 +8,8 @@
 footer {
 	background-color: var(--purple);
 	margin-top: 30vh;
+	position: relative;
+	color: var(--gray);
 }
 
 #contact {
@@ -20,7 +22,6 @@ footer {
 	align-items: center;
 	flex-direction: row;
 	padding: 5vh 5vw;
-	color: var(--gray);
 	transform: translateY(-40%);
 }
 
@@ -102,5 +103,78 @@ footer {
 	}
 	#paper_plane {
 		margin-left: 1.25rem;
+	}
+}
+
+#logo {
+	margin: auto;
+	margin-top: -3vh;
+	width: 10vw;
+	display: block;
+}
+
+footer > h1 {
+	font-weight: 400;
+	font-size: 2vw;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+}
+
+#social_media_container {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+
+#social_media_container > a > img {
+	height: 7.5vh;
+	margin: 5vh 1vw;
+}
+
+#social_media_conainer > a {
+	height: fit-content;
+	width: fit-content;
+}
+
+footer > p {
+	text-align: center;
+	font-weight: 300;
+	font-family: "Public Sans", sans-serif;
+	font-size: 1.5vw;
+	margin: 0;
+	padding: 2vh 0 7.5vh;
+}
+
+@media (max-width: 1200px) {
+	#logo {
+		width: 15vw;
+	}
+	footer > h1 {
+		font-size: 3.5vw;
+	}
+	#social_media_container > a > img {
+		margin: 1vh 1vw;
+
+		height: 5vh;
+	}
+	footer > p {
+		font-size: 2vw;
+	}
+}
+@media (max-width: 748px) {
+	#logo {
+		width: 25vw;
+		margin-top: -10vh;
+	}
+	footer > h1 {
+		font-size: 5vw;
+	}
+	#social_media_container > a > img {
+		margin: 2vh 1vw;
+
+		height: 5.5vh;
+	}
+	footer > p {
+		font-size: 4vw;
 	}
 }

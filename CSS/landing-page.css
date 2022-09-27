@@ -617,7 +617,7 @@ body {
 	width: 75vw;
 	margin: 10vh auto;
 	display: grid;
-	gap: 10vw;
+	gap: 7.5vh;
 	grid-template-columns: 1fr 1fr;
 	align-self: center;
 }
@@ -633,7 +633,6 @@ body {
 	color: var(--gray);
 	transition: 0.3s all ease-in-out;
 	aspect-ratio: 25/7;
-	filter: drop-shadow(5px 4px 27px rgba(51, 51, 51, 0.3));
 }
 
 .title_website {
@@ -682,7 +681,7 @@ body {
 		grid-template-columns: 1fr;
 	}
 	#websites_container {
-		margin: 5vw auto;
+		margin: 3vh auto;
 		width: 85vw;
 	}
 	.website {
@@ -691,7 +690,7 @@ body {
 }
 @media (max-width: 748px) {
 	#websites_container {
-		margin: 3vw auto;
+		margin: 5vh auto;
 		width: 95vw;
 	}
 }
