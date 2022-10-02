@@ -5,11 +5,6 @@
 	--gray: #f9f9ff;
 }
 
-html,
-body {
-	overflow-x: hidden;
-}
-
 .cta {
 	position: relative;
 	margin: auto;
@@ -692,5 +687,15 @@ body {
 	#websites_container {
 		margin: 5vh auto;
 		width: 95vw;
+	}
+}
+@media (hover: none) {
+	.website > .button_website,
+	.website > .title_website,
+	.website::before {
+		opacity: 1 !important;
+	}
+	.button_website {
+		background-color: var(--pink);
 	}
 }

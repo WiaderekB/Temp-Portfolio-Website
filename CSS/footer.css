@@ -178,3 +178,12 @@ footer > p {
 		font-size: 4vw;
 	}
 }
+
+#footer_contact {
+	padding-top: 10vh;
+}
+@media (max-width: 748px) {
+	#footer_contact {
+		padding-top: 15vh;
+	}
+}

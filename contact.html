@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="canonical" href="https://bartoszwiaderek.com" />
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Bartosz Wiaderek</title>
+		<link rel="icon" href="images/logo_white.png" />
+		<link rel="shortcut icon" href="images/logo_white.png" />
+
+		<link rel="stylesheet" href="CSS/contact.css" />
+		<link rel="stylesheet" href="CSS/nav.css" />
+		<link rel="stylesheet" href="CSS/footer.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Public+Sans:wght@300;500;600;700;800&family=Raleway:wght@500;700;800;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav>
+			<a href="index.html" id="logo_link"> <img src="images/logo_white.png" id="nav_logo" alt="Navigation logo" /></a>
+			<div id="nav_buttons">
+				<a href="about-me.html" class="nav_button">about me</a>
+				<a href="writing.html" class="nav_button">writing</a>
+				<a href="contact.html" class="nav_button nav_button_active">contact</a>
+			</div>
+			<button onclick="toggleNav()" id="button_ham">
+				<svg viewBox="0 0 100 80" width="40" height="40" id="hamburger">
+					<rect width="100" height="15" id="ham_1"></rect>
+					<rect y="30" width="100" height="15"></rect>
+					<rect y="60" width="100" height="15"></rect>
+				</svg>
+			</button>
+		</nav>
+
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 1512 200" height="15vw" version="1.1">
+			<path d="M0 81L28 81.3C56 81.7 112 82.3 168 72.3C224 62.3 280 41.7 336 41.2C392 40.7 448 60.3 504 67.5C560 74.7 616 69.3 672 59.2C728 49 784 34 840 30.3C896 26.7 952 34.3 1008 41.8C1064 49.3 1120 56.7 1176 56C1232 55.3 1288 46.7 1344 49.7C1400 52.7 1456 67.3 1484 74.7L1512 82L1512 0L1484 0C1456 0 1400 0 1344 0C1288 0 1232 0 1176 0C1120 0 1064 0 1008 0C952 0 896 0 840 0C784 0 728 0 672 0C616 0 560 0 504 0C448 0 392 0 336 0C280 0 224 0 168 0C112 0 56 0 28 0L0 0Z" fill="#f9f9ff" stroke-linecap="round" stroke-linejoin="miter" />
+		</svg>
+
+		<section>
+			<h1>Contact form</h1>
+			<p>
+				Thanks for taking the time to reach out.<br />
+				How can I help you today?
+			</p>
+			<form id="contact_container" autocomplete="on">
+				<div class="field">
+					<div class="name">Name</div>
+					<input class="textarea" type="text" />
+				</div>
+				<div class="field">
+					<div class="name">Email</div>
+					<input class="textarea" type="email" />
+				</div>
+				<div class="field">
+					<div class="name">Message</div>
+					<span class="textarea" id="textarea_3" role="textbox" contenteditable></span>
+				</div>
+				<button type="submit" class="cta"><span id="button_writting">Submit message</span></button>
+			</form>
+		</section>
+
+		<footer>
+			<img src="images/logo_blue.png" alt="Footer logo" id="logo" />
+			<h1>Living, learning, & leveling up<br />one day at a time.</h1>
+			<div id="social_media_container">
+				<a href="mailto:bartoszwiaderek@gmail.com">
+					<img src="images/mail.png" alt="mail" />
+				</a>
+
+				<a href="https://twitter.com/WiaderekBartosz">
+					<img src="images/twitter.png" alt="twitter" />
+				</a>
+				<a href="https://www.instagram.com/bartoszwiaderek/">
+					<img src="images/instagram.png" alt="instagram" />
+				</a>
+				<a href="https://www.facebook.com/Bartosz.Wiaderek.0/">
+					<img src="images/facebook.png" alt="facebook" />
+				</a>
+			</div>
+			<p>handcrafted by me &copy; twentytwentytwo</p>
+		</footer>
+	</body>
+	<script src="scripts/script.js"></script>
+
+	<script type="module" src="scripts/landing_page_writing.js"></script>
+</html>
