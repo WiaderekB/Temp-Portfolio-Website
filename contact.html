@@ -49,16 +49,16 @@
 			</p>
 			<form id="contact_container" autocomplete="on">
 				<div class="field">
-					<div class="name">Name</div>
-					<input class="textarea" type="text" />
+					<label for="name" class="name">Name</label>
+					<input id="name" class="textarea" name="name" type="text" />
 				</div>
 				<div class="field">
-					<div class="name">Email</div>
-					<input class="textarea" type="email" />
+					<label for="email" class="name">Email</label>
+					<input id="email" class="textarea" name="email" type="email" />
 				</div>
 				<div class="field">
-					<div class="name">Message</div>
-					<span class="textarea" id="textarea_3" role="textbox" contenteditable></span>
+					<label for="message" class="name">Message</label>
+					<span id="message" class="textarea" name="message" role="textbox" contenteditable></span>
 				</div>
 				<button type="submit" class="cta"><span id="button_writting">Submit message</span></button>
 			</form>
