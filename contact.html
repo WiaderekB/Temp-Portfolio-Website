@@ -47,7 +47,7 @@
 				Thanks for taking the time to reach out.<br />
 				How can I help you today?
 			</p>
-			<form id="contact_container" autocomplete="on">
+			<form id="contact_container" autocomplete="on" action="https://formspree.io/f/xnqrvdrk" method="POST">
 				<div class="field">
 					<label for="name" class="name">Name</label>
 					<input id="name" class="textarea" name="name" type="text" />
@@ -58,7 +58,7 @@
 				</div>
 				<div class="field">
 					<label for="message" class="name">Message</label>
-					<span id="message" class="textarea" name="message" role="textbox" contenteditable></span>
+					<textarea id="message" class="textarea" name="message" role="textbox" contenteditable></textarea>
 				</div>
 				<button type="submit" class="cta"><span id="button_writting">Submit message</span></button>
 			</form>
@@ -87,5 +87,13 @@
 	</body>
 	<script src="scripts/script.js"></script>
 
-	<script type="module" src="scripts/landing_page_writing.js"></script>
+	<script type="text/javascript">
+		textarea = document.querySelector("#message");
+		textarea.addEventListener("input", autoResize, false);
+
+		function autoResize() {
+			this.style.height = "auto";
+			this.style.height = this.scrollHeight + "px";
+		}
+	</script>
 </html>

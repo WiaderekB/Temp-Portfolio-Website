@@ -62,8 +62,9 @@ section > p {
 	border-radius: 0.5vw;
 	font-weight: 500;
 	width: calc(100% - 3vw);
-
 	font-size: 1.5vw;
+	resize: none;
+	overflow: hidden;
 	font-family: "Public Sans", sans-serif;
 }
 .textarea:focus {
@@ -109,7 +110,7 @@ button {
 	position: relative;
 	vertical-align: middle;
 	padding: 0 1vw;
-	color: var(--black);
+	color: var(--black) x;
 	margin: auto;
 	font-size: 2vw;
 	width: fit-content;
