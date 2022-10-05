@@ -122,7 +122,7 @@
 	}
 }
 
-#posts_container {
+main {
 	width: 90vw;
 	margin: 20% auto;
 	display: grid;
@@ -193,7 +193,7 @@
 		border: 3px var(--black) solid;
 		padding: 0.75rem 0rem 2rem;
 	}
-	#posts_container {
+	main {
 		grid-template-columns: 1fr 1fr;
 		width: 65vw;
 	}
@@ -204,7 +204,7 @@
 		border: 2px var(--black) solid;
 		padding: 0.75rem 0rem 1rem;
 	}
-	#posts_container {
+	main {
 		width: 80vw;
 		gap: 3rem;
 	}
@@ -215,7 +215,7 @@
 		width: 35vw;
 		padding: 0.75rem 0rem 1rem;
 	}
-	#posts_container {
+	main {
 		width: 90vw;
 		gap: 3rem;
 	}
@@ -236,7 +236,7 @@
 }
 
 @media (max-width: 748px) {
-	#posts_container {
+	main {
 		grid-template-columns: 1fr;
 		width: 100vw;
 	}

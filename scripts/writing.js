@@ -22,7 +22,7 @@ const tag = params.get("tag");
 // Function that creates posts and put them into container
 function create_posts(posts) {
 	posts.forEach((post) => {
-		var container = document.getElementById("posts_container");
+		var container = document.querySelector("main");
 
 		let post_data = post.data();
 		function timeConverter(UNIX_timestamp) {
