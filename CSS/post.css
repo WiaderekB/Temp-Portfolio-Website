@@ -57,6 +57,8 @@
 }
 
 main {
+	word-spacing: 2px;
+	letter-spacing: 0.2px;
 	margin: 40vh auto 10vh;
 	width: 60vw;
 	font-family: "Public sans", sans-serif;
@@ -115,20 +117,25 @@ main blockquote {
 }
 @media (max-width: 1500px) {
 	main {
-		width: 65vw;
+		width: 55vw;
 		font-size: 1.25rem;
 	}
 }
 @media (max-width: 1200px) {
 	main {
 		margin: 20vh auto 0;
-		width: 75vw;
+		width: 70vw;
 		font-size: 1.3rem;
 	}
 }
 @media (max-width: 748px) {
 	main {
+		word-spacing: unset;
+		letter-spacing: unset;
 		margin: 15vh auto 0;
 		width: 90vw;
+	}
+	main blockquote {
+		padding: 1em 1em;
 	}
 }

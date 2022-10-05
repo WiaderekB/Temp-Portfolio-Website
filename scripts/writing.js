@@ -108,14 +108,14 @@ function create_posts(posts) {
 
 // Get posts
 async function get_all() {
-	const posts = await getDocs(query(collection(db, "posts")));
+	const posts = await getDocs(query(collection(db, "posts"), where("public", "==", true)));
 	document.getElementById("loading").innerHTML = " ";
 
 	create_posts(posts);
 }
 
 async function get_tag(tag) {
-	const posts = await getDocs(query(collection(db, "posts"), where("tags", "array-contains", tag)));
+	const posts = await getDocs(query(collection(db, "posts"), where("tags", "array-contains", tag), where("public", "==", true)));
 	document.getElementById("loading").innerHTML = " ";
 
 	create_posts(posts);

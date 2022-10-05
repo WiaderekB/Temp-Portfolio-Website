@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { collection, getDocs, getFirestore, query, limit } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import { collection, getDocs, getFirestore, query, limit, where } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
 async function get() {
 	const firebaseConfig = {
@@ -16,7 +16,7 @@ async function get() {
 	const app = initializeApp(firebaseConfig);
 	const db = getFirestore();
 
-	const posts = await getDocs(query(collection(db, "posts"), limit(4)));
+	const posts = await getDocs(query(collection(db, "posts"), limit(4), where("public", "==", true)));
 
 	var container = document.getElementById("posts_container");
 
