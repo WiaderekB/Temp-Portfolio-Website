@@ -1,29 +1,29 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { collection, getDocs, getFirestore, query } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import { collection, getDocs, getFirestore, query, where } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
+const firebaseConfig = {
+	apiKey: "AIzaSyBHRBOGGiyAEdJQ5gOf_Ml5m2o_YV7eKkY",
+	authDomain: "blog-d05ca.firebaseapp.com",
+	projectId: "blog-d05ca",
+	storageBucket: "blog-d05ca.appspot.com",
+	messagingSenderId: "680020835840",
+	appId: "1:680020835840:web:509a74fd20c2c228a4a2e5",
+	measurementId: "G-W3570PELH0",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// Get data from POST method
 let params = new URLSearchParams(location.search);
 const tag = params.get("tag");
 
-async function get_all() {
-	const firebaseConfig = {
-		apiKey: "AIzaSyBHRBOGGiyAEdJQ5gOf_Ml5m2o_YV7eKkY",
-		authDomain: "blog-d05ca.firebaseapp.com",
-		projectId: "blog-d05ca",
-		storageBucket: "blog-d05ca.appspot.com",
-		messagingSenderId: "680020835840",
-		appId: "1:680020835840:web:509a74fd20c2c228a4a2e5",
-		measurementId: "G-W3570PELH0",
-	};
-
-	// Initialize Firebase
-	const app = initializeApp(firebaseConfig);
-	const db = getFirestore(app);
-
-	const posts = await getDocs(query(collection(db, "posts")));
-
-	var container = document.getElementById("posts_container");
-
+// Function that creates posts and put them into container
+function create_posts(posts) {
 	posts.forEach((post) => {
+		var container = document.getElementById("posts_container");
+
 		let post_data = post.data();
 		function timeConverter(UNIX_timestamp) {
 			var a = new Date(UNIX_timestamp.seconds * 1000);
@@ -105,8 +105,25 @@ async function get_all() {
 		container.appendChild(post);
 	});
 }
+
+// Get posts
+async function get_all() {
+	const posts = await getDocs(query(collection(db, "posts")));
+	document.getElementById("loading").innerHTML = " ";
+
+	create_posts(posts);
+}
+
+async function get_tag(tag) {
+	const posts = await getDocs(query(collection(db, "posts"), where("tags", "array-contains", tag)));
+	document.getElementById("loading").innerHTML = " ";
+
+	create_posts(posts);
+}
+
 if (tag == null) {
 	get_all();
 } else {
 	get_tag(tag);
+	document.querySelector("#info > h1").innerHTML = "Showing posts with tag: <b>" + tag + "</b>";
 }
