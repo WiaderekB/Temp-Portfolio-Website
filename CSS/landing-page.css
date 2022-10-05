@@ -393,6 +393,13 @@
 
 	font-size: 1.2vw;
 }
+.tag {
+	transition: 0.2s color ease;
+}
+.tag:hover {
+	color: var(--pink);
+}
+
 @media (max-width: 2000px) {
 	.post {
 		border-radius: 30px;

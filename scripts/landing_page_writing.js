@@ -58,8 +58,21 @@ async function get() {
 
 		h1.append(post_data.title);
 		p.append(post_data.subtitle);
-		let post_tags = post_data.tags.toString().replace(",", "  |  ");
-		tags.append(post_tags);
+
+		var tag = document.createElement("a");
+		tag.setAttribute("class", "tag");
+		tag.setAttribute("href", "writing.html?tag=" + post_data.tags[0]);
+		tag.append(post_data.tags[0]);
+		tags.append(tag);
+
+		for (let i = 1; i < post_data.tags.length; i++) {
+			tags.append(" | ");
+			var tag = document.createElement("a");
+			tag.setAttribute("class", "tag");
+			tag.setAttribute("href", "writing.html?tag=" + post_data.tags[i]);
+			tag.append(post_data.tags[i]);
+			tags.append(tag);
+		}
 
 		svg.appendChild(line);
 		svg.appendChild(circle1);

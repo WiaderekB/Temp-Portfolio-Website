@@ -78,6 +78,8 @@
 	<script>
 		let params = new URLSearchParams(location.search);
 		const title = params.get("title");
+		console.log(title);
+		document.querySelector("#title_box > h1").textContent = title.replaceAll("-", " ");
 	</script>
 	<script src="scripts/script.js"></script>
 </html>
