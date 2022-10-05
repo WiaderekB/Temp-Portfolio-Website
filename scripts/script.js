@@ -10,7 +10,7 @@ function toggleNav() {
 		}, 500);
 	} else {
 		x.classList.add("nav_active");
-		x.style.zIndex = "1";
+		x.style.zIndex = "2";
 		document.body.style.overflowY = "hidden";
 		document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 	}
