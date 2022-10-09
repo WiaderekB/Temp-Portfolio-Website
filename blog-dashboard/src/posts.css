@@ -1,0 +1,53 @@
+:root {
+	--black: #333333;
+	--purple: #420fe7;
+	--pink: #fbb1c2;
+	--gray: #f9f9ff;
+}
+
+#posts {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 3rem;
+}
+
+.post > * {
+	display: block;
+}
+
+.post {
+	width: calc(100% - 2em);
+	justify-self: center;
+	border-radius: 1rem;
+	text-align: left;
+	height: fit-content;
+	border: 2px var(--black) solid;
+	font-family: "Cairo", sans-serif;
+	margin: 1rem;
+	line-height: 120%;
+}
+
+.post > a {
+	color: var(--black);
+	margin: 1.5rem 1.5rem 0;
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.post > p {
+	margin: 2rem 1.5rem;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 120%;
+}
+
+.container,
+#status {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 1.5rem 0.5rem;
+	font-family: "Public Sans", sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+}
