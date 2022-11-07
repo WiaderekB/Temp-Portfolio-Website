@@ -73,6 +73,7 @@
 	}
 }
 
+/* Follow plane */
 #follow_plane {
 	margin: 40vh 0 30vh;
 	display: flex;
@@ -86,7 +87,7 @@
 	line-height: 120%;
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
-	font-size: 4vw;
+	font-size: 3.5vw;
 	color: var(--black);
 }
 
@@ -106,6 +107,136 @@
 
 @media (max-width: 578px) {
 	#follow_plane {
-		margin: 17.5vh 0 10rem;
+		margin: 15vh 0 5rem;
+	}
+}
+
+svg {
+	margin-left: -1vw;
+}
+
+/* Started */
+#how_it_all_started {
+	--highlight: var(--purple);
+
+	margin-top: -1vh;
+	background-color: var(--pink);
+	color: var(--gray);
+	justify-content: center;
+}
+
+/* Now */
+#how_is_it_now {
+	--highlight: var(--pink);
+
+	padding-top: 2vh;
+	margin-top: -1vh;
+	background-color: var(--purple);
+	color: var(--gray);
+}
+
+/* About me */
+#more_about_me {
+	--highlight: var(--purple);
+	background-color: #fff;
+	color: var(--black);
+}
+
+/* Let's see my work */
+#see_my_work {
+	--highlight: var(--pink);
+
+	margin-top: -0.5vh;
+	padding-top: 5vh;
+	background-color: var(--gray);
+	color: var(--black);
+}
+
+#link {
+	color: var(--pink);
+	font-family: "Public sans", sans-serif;
+	font-weight: 700;
+	font-size: 1.5vw;
+	text-align: right;
+	width: 100%;
+	display: inline-block;
+}
+
+.content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.text {
+	width: 40%;
+	margin: 0 7.5vw;
+}
+
+h1 {
+	margin-top: 0;
+	font-family: "Cairo", sans-serif;
+	font-weight: 800;
+	font-size: 3.5vw;
+	text-align: center;
+}
+p {
+	text-align: justify;
+	font-family: "Public sans", sans-serif;
+	font-weight: 500;
+	font-size: 1.5vw;
+}
+p > span {
+	font-weight: 600;
+	color: var(--highlight);
+}
+
+@media (max-width: 1200px) {
+	.text {
+		width: 50%;
+		margin: 0 5vw;
+	}
+	h1 {
+		font-size: 4vw;
+	}
+	p,
+	#link {
+		font-size: 2vw;
+	}
+}
+@media (max-width: 748px) {
+	.text {
+		width: 60%;
+		margin: 0 4vw;
+	}
+	h1 {
+		font-size: 5vw;
+	}
+	p,
+	#link {
+		font-size: 2.1vw;
+	}
+}
+
+@media (max-width: 578px) {
+	.content {
+		flex-direction: column;
+	}
+
+	.text {
+		width: 85%;
+		margin: auto;
+	}
+	h1 {
+		font-size: 7vw;
+	}
+	p,
+	#link {
+		font-size: 3.5vw;
+	}
+
+	.plane {
+		display: none;
 	}
 }
