@@ -37,10 +37,14 @@ button {
 	padding: 0 1vw;
 	margin: auto;
 	font-size: 2vw;
-	height: 2.5vw;
 	width: fit-content;
 	font-weight: 600;
 	font-family: "Public Sans", sans-serif;
+}
+
+.cta img {
+	height: 2.5vw;
+	width: 2.5vw;
 }
 
 .cta:hover:before {
@@ -68,7 +72,10 @@ button {
 	.cta img {
 		padding: 0 0.35vw;
 		font-size: 2.5vw;
+	}
+	.cta img {
 		height: 3vw;
+		width: 3vw;
 	}
 }
 @media (max-width: 748px) {
@@ -81,7 +88,10 @@ button {
 	.cta img {
 		padding: 0 0.25vw;
 		font-size: 5vw;
+	}
+	.cta img {
 		height: 6vw;
+		width: 6vw;
 	}
 }
 
