@@ -4,6 +4,10 @@
 	--pink: #fbb1c2;
 	--gray: #f9f9ff;
 }
+button {
+	background-color: unset;
+	border: unset;
+}
 
 .cta {
 	position: relative;
@@ -26,60 +30,45 @@
 	transition: all 0.3s ease;
 	transform: translateY(-50%);
 }
-.cta span {
+.cta span,
+.cta img {
 	position: relative;
 	vertical-align: middle;
 	padding: 0 1vw;
 	margin: auto;
 	font-size: 2vw;
+	height: 2.5vw;
 	width: fit-content;
 	font-weight: 600;
 	font-family: "Public Sans", sans-serif;
 }
-.cta svg {
-	position: relative;
-	bottom: 0;
-	fill: none;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke: var(--black);
-	height: 3vh;
-	stroke-width: 2;
-	transition: all 0.3s ease;
-	transform: translateY(40%);
-}
+
 .cta:hover:before {
-	width: 110%;
+	width: 100%;
 	background: var(--pink);
 }
-.cta:hover svg {
-	transform: translate(0.75vw, 40%);
-}
+
 .cta:active {
 	transform: scale(0.96);
 }
 
 @media (max-width: 1500px) {
-	.cta span {
+	.cta span,
+	.cta img {
 		padding: 0 0.5vw;
-		font-size: 2vw;
 	}
 }
 @media (max-width: 1200px) {
-	.cta:hover:before {
-		width: 100%;
-	}
-	.cta svg {
-		height: 2vh;
-	}
 	.cta::before {
 		width: 7vw;
 		height: 7vw;
 		border-radius: 7vw;
 	}
-	.cta span {
+	.cta span,
+	.cta img {
 		padding: 0 0.35vw;
 		font-size: 2.5vw;
+		height: 3vw;
 	}
 }
 @media (max-width: 748px) {
@@ -88,9 +77,11 @@
 		height: 12vw;
 		border-radius: 12vw;
 	}
-	.cta span {
+	.cta span,
+	.cta img {
 		padding: 0 0.25vw;
 		font-size: 5vw;
+		height: 6vw;
 	}
 }
 
