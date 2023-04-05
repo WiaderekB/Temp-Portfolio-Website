@@ -253,6 +253,14 @@ button {
 	font-weight: 700;
 }
 
+#text_meet p {
+	margin-bottom: 1.5rem;
+}
+
+#text_meet br {
+	display: none;
+}
+
 @media (max-width: 1500px) {
 	#text_meet > h1 {
 		font-size: 3rem;
@@ -288,6 +296,9 @@ button {
 	#text_meet > p {
 		font-size: 5vw;
 		width: 90vw;
+	}
+	#text_meet br {
+		display: static;
 	}
 }
 
@@ -557,7 +568,7 @@ button {
 	}
 	@media (max-width: 748px) {
 		.title_website {
-			transform: translateY(-120%);
+			transform: translateY(-140%);
 			font-size: 2vh;
 		}
 		#websites_container {
