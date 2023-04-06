@@ -17,23 +17,21 @@ body {
 }
 
 nav {
+	z-index: 1;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	background-color: var(--gray);
-	width: 100% - 15vw;
 	height: 15vh;
 	padding: 0 7.5vw 0 7.5vw;
 }
 
 #logo_link {
-	display: block;
 	height: 75%;
 	margin: auto 0;
 }
 
 #nav_logo {
-	display: block;
 	height: 100%;
 }
 
@@ -41,7 +39,6 @@ nav {
 	display: flex;
 	flex-direction: row;
 	margin: auto 0;
-	z-index: 1;
 }
 
 #button_ham {
@@ -50,7 +47,6 @@ nav {
 	border: none;
 	outline: none;
 	display: none;
-
 	background: none;
 }
 

@@ -46,7 +46,7 @@ section p {
 
 .field:nth-child(3) {
 	width: 95%;
-	margin-top: 3vh;
+	margin: 3vh 0;
 }
 
 .name {
