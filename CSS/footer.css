@@ -25,13 +25,13 @@ footer {
 	transform: translateY(-40%);
 }
 
-#contact > h1 {
+#contact h2 {
 	font-family: 700;
 	font-family: "Raleway", sans-serif;
 	font-size: 4vw;
 }
 
-#contact > #button {
+#contact #button {
 	height: fit-content;
 	border: var(--pink) 3px solid;
 	font-weight: 800;
@@ -47,7 +47,7 @@ footer {
 	transition: all 0.3s ease-in-out;
 }
 
-#contact > #button:hover {
+#contact #button:hover {
 	background-color: var(--pink);
 }
 
@@ -62,10 +62,10 @@ footer {
 }
 
 @media (max-width: 1500px) {
-	#contact > h1 {
+	#contact h2 {
 		font-size: 4vw;
 	}
-	#contact > #button {
+	#contact #button {
 		padding: 2vh 4vw;
 		border-radius: 1.5rem;
 		border-width: 2px;
@@ -76,7 +76,7 @@ footer {
 	}
 }
 @media (max-width: 1200px) {
-	#contact > #button {
+	#contact #button {
 		padding: 1.5vh 4vw;
 		border-radius: 1.25rem;
 		font-size: 2.75vw;
@@ -87,7 +87,7 @@ footer {
 	}
 }
 @media (max-width: 748px) {
-	#contact > h1 {
+	#contact h2 {
 		font-size: 7.5vw;
 	}
 	#contact {
@@ -95,7 +95,7 @@ footer {
 
 		flex-direction: column;
 	}
-	#contact > #button {
+	#contact #button {
 		margin-top: 5vh;
 		padding: 1.5vh 10vw;
 		border-radius: 1.25rem;
@@ -113,7 +113,7 @@ footer {
 	display: block;
 }
 
-footer > h1 {
+footer h3 {
 	font-weight: 400;
 	font-size: 2vw;
 	text-align: center;
@@ -126,12 +126,12 @@ footer > h1 {
 	justify-content: center;
 }
 
-#social_media_container > a > img {
+#social_media_container a img {
 	height: 7.5vh;
 	margin: 5vh 1vw;
 }
 
-#social_media_conainer > a {
+#social_media_conainer a {
 	height: fit-content;
 	width: fit-content;
 }
@@ -149,10 +149,10 @@ footer > p {
 	#logo {
 		width: 15vw;
 	}
-	footer > h1 {
+	footer h3 {
 		font-size: 3.5vw;
 	}
-	#social_media_container > a > img {
+	#social_media_container a img {
 		margin: 1vh 1vw;
 
 		height: 5vh;
@@ -166,10 +166,10 @@ footer > p {
 		width: 25vw;
 		margin-top: -10vh;
 	}
-	footer > h1 {
+	footer h3 {
 		font-size: 5vw;
 	}
-	#social_media_container > a > img {
+	#social_media_container a img {
 		margin: 2vh 1vw;
 
 		height: 5.5vh;

@@ -9,89 +9,27 @@ button {
 	border: unset;
 }
 
-.cta {
-	position: relative;
-	margin: auto;
-	width: fit-content;
-	height: fit-content;
-	padding: 19px 22px;
-	transition: all 0.2s ease;
-}
-.cta:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	display: block;
-	border-radius: 5vw;
-	background: #fbb1c2bf;
-	width: 5vw;
-	height: 5vw;
-	transition: all 0.3s ease;
-	transform: translateY(-50%);
-}
-.cta span,
-.cta img {
-	position: relative;
-	vertical-align: middle;
-	padding: 0 1vw;
-	margin: auto;
-	font-size: 2vw;
-	width: fit-content;
-	font-weight: 600;
-	font-family: "Public Sans", sans-serif;
-}
-
-.cta img {
-	height: 2.5vw;
-	width: 2.5vw;
-}
-
-.cta:hover:before {
-	width: 100%;
-	background: var(--pink);
-}
-
-.cta:active {
-	transform: scale(0.96);
+.section-title {
+	font-family: "Cairo", sans-serif;
+	font-weight: 800;
+	line-height: 120%;
+	font-size: 4.5vw;
+	margin: 0;
 }
 
 @media (max-width: 1500px) {
-	.cta span,
-	.cta img {
-		padding: 0 0.5vw;
+	.section-title {
+		font-size: 4rem;
 	}
 }
 @media (max-width: 1200px) {
-	.cta::before {
-		width: 7vw;
-		height: 7vw;
-		border-radius: 7vw;
-	}
-	.cta span,
-	.cta img {
-		padding: 0 0.35vw;
-		font-size: 2.5vw;
-	}
-	.cta img {
-		height: 3vw;
-		width: 3vw;
+	.section-title {
+		font-size: 3rem;
 	}
 }
 @media (max-width: 748px) {
-	.cta::before {
-		width: 12vw;
-		height: 12vw;
-		border-radius: 12vw;
-	}
-	.cta span,
-	.cta img {
-		padding: 0 0.25vw;
-		font-size: 5vw;
-	}
-	.cta img {
-		height: 6vw;
-		width: 6vw;
+	.section-title {
+		font-size: 2.75rem;
 	}
 }
 
@@ -110,7 +48,7 @@ button {
 	text-align: center;
 }
 
-#title_box > h1 {
+#title_box h1 {
 	margin: 0;
 	font-family: "Raleway", sans-serif;
 	font-weight: 900;
@@ -118,15 +56,15 @@ button {
 	color: var(--black);
 }
 
-#title_box > h1:first-of-type {
+#title_box h1:first-of-type {
 	font-size: 12.9982246591vw;
 	margin-bottom: -4vw;
 }
-#title_box > h1:last-of-type {
+#title_box h1:last-of-type {
 	font-size: 11.2866817156vw;
 }
 
-#title_box > h2 {
+#title_box h2 {
 	margin: 0;
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -146,14 +84,14 @@ button {
 		width: 70vw;
 		transform: translate(-50%, -60%);
 	}
-	#title_box > h1:first-of-type {
+	#title_box h1:first-of-type {
 		font-size: 15.1645954357vw;
 		margin-bottom: -4vw;
 	}
-	#title_box > h1:last-of-type {
+	#title_box h1:last-of-type {
 		font-size: 13.1677953348vw;
 	}
-	#title_box > h2 {
+	#title_box h2 {
 		font-size: 5vw;
 	}
 }
@@ -162,14 +100,14 @@ button {
 	#title_box {
 		width: 85vw;
 	}
-	#title_box > h1:first-of-type {
+	#title_box h1:first-of-type {
 		font-size: 18.4141516005vw;
 		margin-bottom: -5vw;
 	}
-	#title_box > h1:last-of-type {
+	#title_box h1:last-of-type {
 		font-size: 15.9894657637vw;
 	}
-	#title_box > h2 {
+	#title_box h2 {
 		margin-top: 0.5rem;
 		font-size: 7vw;
 	}
@@ -192,7 +130,7 @@ button {
 	padding: 0 0.75rem;
 }
 
-#hello > b {
+#hello > span {
 	color: var(--purple);
 	font-weight: 700;
 }
@@ -233,28 +171,17 @@ button {
 	transform: translate(0, -60%);
 }
 
-#text_meet > h1 {
-	font-family: "Cairo", sans-serif;
-	font-weight: 700;
-	line-height: 120%;
-	font-size: 3vw;
-}
-
-#text_meet > p {
+#text_meet p {
 	font-family: "Public Sans", sans-serif;
 	font-weight: 500;
 	font-size: 1.5vw;
-	margin: 0 auto;
+	margin: 1.5rem auto;
 	width: 40vw;
 }
 
-#text_meet > p > b {
+#text_meet span {
 	color: var(--pink);
 	font-weight: 700;
-}
-
-#text_meet p {
-	margin-bottom: 1.5rem;
 }
 
 #text_meet br {
@@ -262,10 +189,7 @@ button {
 }
 
 @media (max-width: 1500px) {
-	#text_meet > h1 {
-		font-size: 3rem;
-	}
-	#text_meet > p {
+	#text_meet p {
 		font-size: 1.5rem;
 		width: 52vw;
 	}
@@ -278,22 +202,19 @@ button {
 		left: null;
 		transform: translate(0, -60%);
 	}
-	#text_meet > h1 {
-		font-size: 3rem;
-		margin: 1.5rem 0;
-	}
-	#text_meet > p {
+
+	#text_meet p {
 		font-size: 1.5rem;
 		width: 60vw;
 	}
 }
 
 @media (max-width: 748px) {
-	#text_meet > h1 {
+	#text_meet h3 {
 		font-size: 2.25rem;
 		margin-bottom: 3rem;
 	}
-	#text_meet > p {
+	#text_meet p {
 		font-size: 5vw;
 		width: 90vw;
 	}
@@ -310,16 +231,12 @@ button {
 	position: relative;
 }
 
-#skills > h1 {
+#skills h3 {
 	position: absolute;
 	top: 30%;
+
 	text-align: center;
 	width: 100vw;
-	font-family: "Cairo", sans-serif;
-	font-weight: 800;
-	line-height: 120%;
-	font-size: 4.5vw;
-	margin: 0;
 }
 
 #skills_container {
@@ -338,7 +255,7 @@ button {
 	grid-template-columns: repeat(8, 1fr);
 }
 
-#skills_container > img {
+#skills_container img {
 	height: 5vw !important;
 }
 
@@ -350,16 +267,11 @@ button {
 
 @media (max-width: 1500px) {
 	#skills_container {
-		/* width: 50vw; */
-
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 	}
 	#skils {
 		margin-top: 12.5rem;
-	}
-	#skills > h1 {
-		font-size: 4rem;
 	}
 }
 @media (max-width: 1200px) {
@@ -369,10 +281,7 @@ button {
 	#skills_container {
 		top: 40%;
 	}
-	#skills > h1 {
-		top: 25%;
-	}
-	#skills_container > img {
+	#skills_container img {
 		height: 7.5vw !important;
 	}
 	.skill {
@@ -383,8 +292,7 @@ button {
 	#skills {
 		margin-top: 7.5rem;
 	}
-	#skills > h1 {
-		font-size: 2.75rem;
+	#skills h3 {
 		top: 15%;
 	}
 	#skills_container {
@@ -394,7 +302,7 @@ button {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(8, 1fr);
 	}
-	#skills_container > img {
+	#skills_container img {
 		height: 15vw !important;
 	}
 	.skill {
@@ -413,15 +321,7 @@ button {
 	margin-top: 10rem;
 }
 
-#work > h1 {
-	font-family: "Cairo", sans-serif;
-	font-weight: 700;
-	line-height: 120%;
-	font-size: 4.5vw;
-	margin: 0;
-}
-
-#work > h2 {
+#work h4 {
 	font-family: "Public Sans", sans-serif;
 	font-weight: 500;
 	font-size: 2vw;
@@ -432,10 +332,7 @@ button {
 	#work {
 		margin-top: 5rem;
 	}
-	#work > h1 {
-		font-size: 4rem;
-	}
-	#work > h2 {
+	#work h4 {
 		font-size: 1.5rem;
 	}
 }
@@ -444,10 +341,7 @@ button {
 	#work {
 		margin-top: 3rem;
 	}
-	#work > h1 {
-		font-size: 3rem;
-	}
-	#work > h2 {
+	#work h4 {
 		font-size: 1.25rem;
 	}
 }
@@ -456,11 +350,8 @@ button {
 	#writing {
 		margin-top: 2rem;
 	}
-	#writing > h1 {
-		font-size: 2.75rem;
-	}
 
-	#writing > h2 {
+	#writing h4 {
 		font-size: 1rem;
 	}
 }
@@ -509,6 +400,7 @@ button {
 	font-family: "Public Sans", sans-serif;
 	transition: 0.3s all ease-in-out;
 }
+
 @media (hover: hover) {
 	.button_website:hover {
 		background-color: var(--pink);
@@ -550,6 +442,7 @@ button {
 		width: 95vw;
 	}
 }
+
 @media (hover: none) {
 	.title_website {
 		opacity: 1;

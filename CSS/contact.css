@@ -9,7 +9,7 @@ section {
 	text-align: center;
 }
 
-section > h1 {
+section h1 {
 	font-family: "Cairo", sans-serif;
 	font-weight: 800;
 	color: var(--purple);
@@ -17,7 +17,7 @@ section > h1 {
 	margin: 0;
 }
 
-section > p {
+section p {
 	margin: 0;
 	font-family: "Raleway", sans-serif;
 	font-weight: 500;
@@ -83,129 +83,4 @@ section > p {
 button {
 	background-color: unset;
 	border: unset;
-}
-
-.cta {
-	position: relative;
-	margin: 5vh auto 0;
-	width: fit-content;
-	height: fit-content;
-	padding: 19px 22px;
-	transition: all 0.2s ease;
-}
-.cta:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	display: block;
-	border-radius: 5vw;
-	background: #fbb1c2bf;
-	width: 5vw;
-	height: 5vw;
-	transition: all 0.3s ease;
-	transform: translateY(-50%);
-}
-.cta span {
-	position: relative;
-	vertical-align: middle;
-	padding: 0 1vw;
-	color: var(--black) x;
-	margin: auto;
-	font-size: 2vw;
-	width: fit-content;
-	font-weight: 600;
-	font-family: "Public Sans", sans-serif;
-}
-
-.cta:hover:before {
-	width: 100%;
-	background: var(--pink);
-}
-
-.cta:active {
-	transform: scale(0.96);
-}
-
-@media (max-width: 1500px) {
-	.textarea {
-		border: var(--black) 1px solid;
-	}
-	.cta span {
-		padding: 0 0.5vw;
-		font-size: 2vw;
-	}
-}
-@media (max-width: 1200px) {
-	section > h1 {
-		font-size: 7vw;
-	}
-
-	section > p {
-		font-size: 4vw;
-	}
-	#contact_container {
-		margin-top: 7.5vh;
-		width: 75vw;
-	}
-
-	.name {
-		font-size: 2vw;
-	}
-
-	.textarea {
-		font-size: 2.5vw;
-		padding: 1.5vh 1.5vw;
-	}
-
-	.cta:hover:before {
-		width: 100%;
-	}
-
-	.cta::before {
-		width: 7vw;
-		height: 7vw;
-		border-radius: 7vw;
-	}
-	.cta span {
-		padding: 0 0.35vw;
-		font-size: 2.5vw;
-	}
-}
-@media (max-width: 748px) {
-	section > h1 {
-		font-size: 10vw;
-	}
-
-	section > p {
-		font-size: 5vw;
-	}
-	#contact_container {
-		margin-top: 5vh;
-		width: 90vw;
-	}
-
-	.name {
-		font-size: 3vw;
-	}
-	.field:nth-child(1),
-	.field:nth-child(2) {
-		width: 95%;
-		margin: 0;
-		margin-top: 1vh;
-	}
-
-	.textarea {
-		font-size: 4vw;
-	}
-
-	.cta::before {
-		width: 12vw;
-		height: 12vw;
-		border-radius: 12vw;
-	}
-	.cta span {
-		padding: 0 0.25vw;
-		font-size: 5vw;
-	}
 }
